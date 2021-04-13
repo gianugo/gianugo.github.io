@@ -15,9 +15,9 @@
     </head>
     <body>
         <h1>Nothing really interesting here</h1>
-        <p>Look ma, a <a href="#" onclick="click('link')">link</a>!<p>
+        <p>Look ma, a <a href="#" onClick="handleClick('link')">link</a>!<p>
      <script>
-       function click(param) {
+       function handleClick(param) {
         window["msdynmkt"].setUser({ authId: "<customer-id>"});
         window["msdynmkt"].trackEvent({
             name: "msdynmkt_thisisasimpleevent",
