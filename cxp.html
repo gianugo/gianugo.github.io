@@ -18,12 +18,12 @@
         <p>Look ma, a <a href="#" onClick="handleClick('link')">link</a>!<p>
      <script>
        function handleClick(param) {
-        window["msdynmkt"].setUser({ authId: "<customer-id>"});
+        window["msdynmkt"].setUser({ authId: "05f93891-d89b-eb11-b1ac-000d3a313107"});
         window["msdynmkt"].trackEvent({
-            name: "msdynmkt_thisisasimpleevent",
+            name: "msdynmkt_eventwithnumbers",
             version: "1.0.0",
             properties: {
-		          "andanattribute" : param
+		    "number" : 3.5
         }});
        }
      </script>     
