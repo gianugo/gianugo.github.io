@@ -20,10 +20,10 @@
        function handleClick(param) {
         window["msdynmkt"].setUser({ authId: "05f93891-d89b-eb11-b1ac-000d3a313107"});
         window["msdynmkt"].trackEvent({
-            name: "msdynmkt_eventwithnumbers",
+            name: "msdynmkt_cdpadelay",
             version: "1.0.0",
             properties: {
-		    "number" : 3.5
+		    "timestamp": new Date(Date.now()).toISOString()
         }});
        }
      </script>     
